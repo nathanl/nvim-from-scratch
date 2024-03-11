@@ -38,5 +38,6 @@ vim.opt.pumheight = 10
 -- Behavior
 vim.opt.clipboard = "unnamedplus"
 vim.opt.hidden = true
-vim.opt.undofile = true
+-- don't remember undos history once a buffer is closed
+vim.opt.undofile = false
 vim.opt.updatetime = 1000
