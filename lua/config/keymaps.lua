@@ -17,17 +17,8 @@ set("n", "<Right>", "<C-w>l")
 -- this is rad, I used enter but escape is better
 set("n", "<Esc>", "<Cmd>nohlsearch<CR>")
 
-
--- TODO make this work?
--- " reload .vimrc
--- map <leader>rc :source ~/.vimrc<cr>
-
--- TODO make this work
--- " copy current relative filename into clipboard
--- map <LocalLeader>n :let @+ = expand("%")<cr>
--- not valid...
---set("n", "<LocalLeader>n :let @+ = expand("%")<cr>")
-
 -- if I open this window and ctrl-w out of it I can't get back to it to kill it
 set("n", "<Leader>p", "<Cmd>Lazy<CR>", { desc = "Plugins" })
 
+-- copy current file's name to system clipboard
+set("n", "<LocalLeader>n", ":let @+ = expand('%')<cr>")
