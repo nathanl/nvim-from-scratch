@@ -31,7 +31,7 @@ return {
           }
         }
       },
-      lualine_c = {'branch', 'diff', 'diagnostics'},
+      lualine_c = {'diff', 'diagnostics'},
       lualine_x = {'encoding', 'fileformat', 'filetype'},
       lualine_y = {'progress'},
       lualine_z = {'location'}
