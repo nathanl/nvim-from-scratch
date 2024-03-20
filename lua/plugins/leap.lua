@@ -2,7 +2,7 @@ return {
   "ggandor/leap.nvim",
 
   dependencies = {
-    { "ggandor/flit.nvim", config = true },
+    { "ggandor/flit.nvim", config = true, enabled = false},
   },
 
   config = function()
