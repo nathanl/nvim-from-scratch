@@ -13,7 +13,7 @@ return {
 
   keys = {
     { "<Leader>/", find("current_buffer_fuzzy_find"), desc = "Search" },
-    { "<Leader><Space>", find("buffers", {sort_lastused = true}), desc = "Buffers" },
+    { "<Leader><Space>", find("buffers", {sort_lastused = true, previewer = false}), desc = "Buffers"},
     { "<Leader>fa", find("autocommands"), desc = "Autocommands" },
     { "<Leader>fc", find("commands"), desc = "Commands" },
     { "<Leader>ff", find("find_files"), desc = "Files" },
