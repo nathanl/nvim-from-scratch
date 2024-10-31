@@ -1,7 +1,7 @@
 local M = { "lifepillar/vim-solarized8" }
 
 function M.config()
-  -- require('solarized').set()
+  vim.opt.background = 'light'
 
   -- set the color scheme in vim
   vim.cmd.colorscheme("solarized8")
