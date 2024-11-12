@@ -16,7 +16,7 @@ return {
     { "<Leader><Space>", find("buffers", {sort_lastused = true, previewer = false}), desc = "Buffers"},
     { "<Leader>fa", find("autocommands"), desc = "Autocommands" },
     { "<Leader>fc", find("commands"), desc = "Commands" },
-    { "<Leader>ff", find("find_files"), desc = "Files" },
+    { "<Leader>ff", find("find_files", {previewer = false}), desc = "Files" },
     { "<Leader>fg", find("live_grep"), desc = "Grep" },
     { "<Leader>fh", find("help_tags"), desc = "Help" },
     { "<Leader>fl", find("loclist"), desc = "Location list" },
