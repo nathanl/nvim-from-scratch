@@ -4,7 +4,7 @@ return {
 
   -- Navigation
   "andymass/vim-matchup",
-  "justinmk/vim-dirvish",
+  "preservim/nerdtree",
   { "folke/trouble.nvim", config = true },
 
   -- Syntax
