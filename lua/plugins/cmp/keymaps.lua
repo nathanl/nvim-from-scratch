@@ -3,7 +3,9 @@ local M = {}
 function M.setup(cmp, luasnip)
   return cmp.mapping.preset.insert({
     ["<C-Space>"] = cmp.mapping.complete({}),
-    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+    -- When there are autocompletion suggestions and I press enter,
+    -- don't use any of them unless I explicitly selected one
+    ["<CR>"] = cmp.mapping.confirm({ select = false }),
     ["<C-e>"] = cmp.mapping.close(),
 
     ["<C-b>"] = cmp.mapping.scroll_docs(-4),
