@@ -14,12 +14,6 @@ enter to open, `control + v` to open in a vertical split.
 `:Telescope` and tab to explore, `control + n/p` to scroll.
 `:Telescope diagnostics` to look at all errors
 
-## NVimTree
-
-`space e f` to get a file tree or toggle it off. (when opened the editor it's dirvish, more like netrw)
-`-` goes up a directory
-`:e %` and tab will autocomplete in the same directory, can use that in stuff like `!mkdir %` and tab.
-
 ## Treesitter
 
 Treesitter uses known grammars to parse language code, exposes commands to perform on the AST, so upgrade’s editor’s understanding from basically regex-based to semantic understanding - this is a function, this is an optional parameter. Way better syntax highlighting is one effect. `:TSInstall vimdoc` installs parser for vimdocs
@@ -41,3 +35,7 @@ Is complex but complexity is almost all optional, can be used more simply but ca
 ## whichkey
 
 Eg, if you hit space, it shows you the things you can press next.
+
+## Leap
+
+Press `s` or `S`, type two characters that appear anywhere on screen, and press the single-key label to jump to the one you want.
