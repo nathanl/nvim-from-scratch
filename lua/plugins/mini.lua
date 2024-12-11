@@ -1,3 +1,5 @@
+-- Actually a bunch of plugins smuggled together
+-- https://github.com/echasnovski/mini.nvim?tab=readme-ov-file#modules
 local M = { "echasnovski/mini.nvim" }
 
 function M.align()

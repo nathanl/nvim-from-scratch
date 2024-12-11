@@ -185,10 +185,8 @@ container.
 [folke-dot]: https://github.com/folke/dot/tree/master/config/nvim
 [folke/neodev.nvim]: https://github.com/folke/neodev.nvim
 [folke/todo-comments.nvim]: https://github.com/folke/todo-comments.nvim
-[folke/tokyonight.nvim]: https://github.com/folke/tokyonight.nvim
 [folke/trouble.nvim]: https://github.com/folke/trouble.nvim
 [folke/which-key.nvim]: https://github.com/folke/which-key.nvim
-[ggandor/leap.nvim]: https://github.com/ggandor/leap.nvim
 [homebrew]: https://brew.sh/
 [hrsh7th/cmp-buffer]: https://github.com/hrsh7th/cmp-buffer
 [hrsh7th/cmp-nvim-lsp]: https://github.com/hrsh7th/cmp-nvim-lsp
