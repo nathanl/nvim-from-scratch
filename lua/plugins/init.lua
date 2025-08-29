@@ -18,4 +18,7 @@ return {
   "tpope/vim-repeat",
   "tpope/vim-rsi",
   "tpope/vim-unimpaired",
+
+  -- AI
+  "pscottdevos/nvim-claude",
 }
