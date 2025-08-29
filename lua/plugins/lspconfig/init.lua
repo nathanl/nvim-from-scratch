@@ -50,7 +50,8 @@ function M.config()
   -- Configure Expert language server for Elixir
   require('lspconfig.configs').expert = {
     default_config = {
-      cmd = { '/usr/local/bin/expert' },
+      -- as installed by Mason
+      cmd = { 'expert' },
       filetypes = { 'elixir', 'eelixir', 'heex' },
       root_dir = require('lspconfig.util').root_pattern('mix.exs', '.git'),
       settings = {},
