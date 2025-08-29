@@ -39,3 +39,22 @@ Eg, if you hit space, it shows you the things you can press next.
 ## Leap
 
 Press `s` or `S`, type two characters that appear anywhere on screen, and press the single-key label to jump to the one you want.
+
+## LSP Stuff
+
+1. LSP status: Open an Elixir file and run :LspInfo - you should see expert listed as attached
+2. Completion: In an Elixir file, type Enum. and see if you get autocompletion suggestions
+3. Go-to-definition: Put cursor on a function call and press <C-]> (your configured keybind for definition)
+4. Diagnostics:
+  - Write some invalid Elixir syntax and see if you get error highlights
+  - Navigate between diagnostics with [d (previous) and ]d (next)
+5. Hover documentation: Put cursor on a built-in function like IO.puts and press K (your hover keybind)
+
+Additional LSP features available:
+
+- Rename: <LocalLeader>R to rename symbols
+- Code actions: <LocalLeader>a for available code actions
+- References: <LocalLeader>r to find references
+- Symbols: <LocalLeader>s for document symbols, <LocalLeader>S for workspace symbols
+- Diagnostics: <LocalLeader>d to open diagnostic float
+- Format: <LocalLeader>f to format code (if supported)

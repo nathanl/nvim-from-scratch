@@ -20,11 +20,14 @@ function M.setup(client, buffer)
 
     K = { lsp.buf.hover, "Hover" },
     ["<C-]>"] = { lsp.buf.definition, "Go to definition" },
-    ["[d"] = { lsp.diagnostic.goto_prev, "Prev diagnostic" },
-    ["]d"] = { lsp.diagnostic.goto_next, "Next diagnostic" },
+    ["[d"] = { vim.diagnostic.goto_prev, "Prev diagnostic" },
+    ["]d"] = { vim.diagnostic.goto_next, "Next diagnostic" },
   }
 
   require("which-key").register(mappings, { buffer = buffer })
+  
+  -- Direct keymap as fallback
+  vim.keymap.set('n', '<LocalLeader>d', vim.diagnostic.open_float, { buffer = buffer, desc = "Diagnostics" })
 end
 
 return M

@@ -12,7 +12,6 @@ M.dependencies = {
 function M.config()
   local servers = {
     bashls = {},
-    elixirls = {},
     lua_ls = {
       Lua = {
         telemetry = { enable = false },
@@ -51,6 +50,15 @@ function M.config()
       })
     end,
   })
+
+  -- Configure Expert language server for Elixir
+  vim.lsp.config('expert', {
+    cmd = { '/usr/local/bin/expert' },
+    root_markers = { 'mix.exs', '.git' },
+    filetypes = { 'elixir', 'eelixir', 'heex' },
+  })
+
+  vim.lsp.enable('expert')
 end
 
 return M
