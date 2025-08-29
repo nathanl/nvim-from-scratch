@@ -26,10 +26,6 @@ function M.config()
   local function on_attach(client, buffer)
     require("plugins.lspconfig.keymaps").setup(client, buffer)
     require("plugins.lspconfig.formatting").setup(client, buffer)
-
-    vim.wo.foldmethod = "expr"
-    vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
-    vim.wo.foldlevel = 99
   end
 
   local capabilities = vim.lsp.protocol.make_client_capabilities()

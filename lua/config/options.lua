@@ -41,3 +41,13 @@ vim.opt.hidden = true
 -- don't remember undos history once a buffer is closed
 vim.opt.undofile = false
 vim.opt.updatetime = 1000
+
+-- Folding
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "elixir", "eelixir", "heex" },
+  callback = function()
+    vim.wo.foldmethod = "expr"
+    vim.wo.foldexpr = "v:lua.vim.lsp.foldexpr()"
+    vim.wo.foldlevel = 99
+  end,
+})
