@@ -52,13 +52,19 @@ function M.config()
   })
 
   -- Configure Expert language server for Elixir
-  vim.lsp.config('expert', {
-    cmd = { '/usr/local/bin/expert' },
-    root_markers = { 'mix.exs', '.git' },
-    filetypes = { 'elixir', 'eelixir', 'heex' },
-  })
+  require('lspconfig.configs').expert = {
+    default_config = {
+      cmd = { '/usr/local/bin/expert' },
+      filetypes = { 'elixir', 'eelixir', 'heex' },
+      root_dir = require('lspconfig.util').root_pattern('mix.exs', '.git'),
+      settings = {},
+    },
+  }
 
-  vim.lsp.enable('expert')
+  require('lspconfig').expert.setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+  })
 end
 
 return M
