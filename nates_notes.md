@@ -58,3 +58,5 @@ Additional LSP features available:
 - Symbols: <LocalLeader>s for document symbols, <LocalLeader>S for workspace symbols
 - Diagnostics: <LocalLeader>d to open diagnostic float
 - Format: <LocalLeader>f to format code (if supported)
+
+To restart, `:LspRestart expert`

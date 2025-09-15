@@ -24,8 +24,12 @@ function M.config()
   require("mason").setup()
 
   local function on_attach(client, buffer)
+    -- Set up LSP keybindings
     require("plugins.lspconfig.keymaps").setup(client, buffer)
-    require("plugins.lspconfig.formatting").setup(client, buffer)
+    -- Format on save
+    -- (commented out because this has been buggy - 
+    -- https://github.com/elixir-lang/expert/issues/83)
+    -- require("plugins.lspconfig.formatting").setup(client, buffer)
   end
 
   local capabilities = vim.lsp.protocol.make_client_capabilities()
