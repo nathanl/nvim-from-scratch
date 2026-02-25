@@ -55,7 +55,7 @@ function M.config()
   require('lspconfig.configs').expert = {
     default_config = {
       -- as installed by Mason
-      cmd = { 'expert' },
+      cmd = { 'expert', '--stdio' },
       filetypes = { 'elixir', 'eelixir', 'heex' },
       root_dir = require('lspconfig.util').root_pattern('mix.exs', '.git'),
       settings = {},
